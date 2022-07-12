@@ -1,7 +1,5 @@
 class BankAccount
-  attr_reader :account_number,
-              :secret_code,
-              :balance
+  attr_reader :account_number, :secret_code, :balance
 
   def initialize(id, pin, balance)
     @account_number = id
@@ -10,14 +8,13 @@ class BankAccount
   end
 
   def deposit(amount)
+    #####this is intentional to error
     @balance = @balance + amount
   end
 
   def withdraw(amount)
-
   end
 
   def verify?(id, pin)
-
   end
 end
