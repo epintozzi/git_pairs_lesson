@@ -14,7 +14,8 @@ class BankAccount
   end
 
   def withdraw(amount)
-
+    @balance = @balance - amount
+    p @balance
   end
 
   def verify?(id, pin)
@@ -24,4 +25,6 @@ class BankAccount
 
 
   "hello sergio"
+
+'hello, jake'
 end
